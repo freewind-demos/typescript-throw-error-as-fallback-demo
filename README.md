@@ -1,9 +1,7 @@
-TypeScript Default Value Operator Demo
-===========================
+TypeScript Throw Error as Fallback Demo
+=======================================
 
-Typescript终于在3.7.x中支持`??`，在使用一个可能为null/undefined的对象时，可以为它设置一个fallback value
-
-Webstorm需要2019.3及以后的版本。
+如何在`??`的fallback value处throw error
 
 See: <https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-7.html#nullish-coalescing>
 
