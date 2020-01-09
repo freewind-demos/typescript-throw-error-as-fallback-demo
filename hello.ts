@@ -1,9 +1,12 @@
-function throwError(errorMessage: string): any {
+// Notice: the return type `never` is important, make this function not change
+// the variable type
+function throwError(errorMessage: string): never {
   throw new Error(errorMessage)
 }
 
 function hello(name?: string) {
-  console.log(`Hello, ${name?.toUpperCase() ?? throwError('test-error')}`)
+  const newName = name?.toUpperCase() ?? throwError('test-error');
+  console.log(`Hello, ${newName}`)
 }
 
 hello('world');
